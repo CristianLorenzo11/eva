@@ -352,7 +352,8 @@ padding-top: 10px;
         margin-right: 0;
         margin-bottom: 5px; /* Reducir el margen inferior en pantalla pequeña */
         width: 60%; /* Establecer un ancho máximo para los botones */
-        color: #fff;
+        color: #ea99ec;
+        border: 1px solid #ea99ec; /* Agregar un borde claro */
     }
 }
 
