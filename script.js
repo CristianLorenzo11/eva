@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
       event.preventDefault();
       const password = loginForm.password.value;
   
-      // Verificar si la contraseña es correcta (aquí puedes establecer tu propia lógica)
-      if (password === '32765711') {
+      // Verificar si la contraseña es correcta 
+      if (password === '32657611') {
         loginContainer.classList.add('hidden');
         content.classList.remove('hidden');
       } else {
