@@ -83,22 +83,22 @@ function actualizarVisualizacionTiempo() {
 }
 
 function iniciarTemporizador() {
-    var boton = document.getElementById("boton-temporizador");
+  var boton = document.getElementById("boton-temporizador");
 
-    if (!corriendo) { // Si el temporizador no está corriendo, iniciarlo
-        clearInterval(temporizador); // Limpiar cualquier temporizador anterior
-        tiempo = 60; // Reiniciar el tiempo a 1 minuto
-        actualizarVisualizacionTiempo(); // Actualizar la visualización del tiempo
-        temporizador = setInterval(actualizarTemporizador, 1000); // Iniciar el temporizador
-        corriendo = true; // Actualizar el estado a corriendo
-        boton.innerHTML = "Pausar"; // Cambiar el texto del botón a "Pausar"
-    } else { // Si el temporizador está corriendo, pausarlo
-        clearInterval(temporizador); // Detener el temporizador
-        corriendo = false; // Actualizar el estado a pausado
-        boton.innerHTML = "Reanudar"; // Cambiar el texto del botón a "Reanudar"
-    }
+  if (!corriendo) { // Si el temporizador no está corriendo, iniciarlo
+      clearInterval(temporizador); // Limpiar cualquier temporizador anterior
+      if (tiempo === 0) { // Si el tiempo es cero, reiniciar a 60 segundos
+          tiempo = 60;
+      }
+      temporizador = setInterval(actualizarTemporizador, 1000); // Iniciar el temporizador
+      corriendo = true; // Actualizar el estado a corriendo
+      boton.innerHTML = "Pausar"; // Cambiar el texto del botón a "Pausar"
+  } else { // Si el temporizador está corriendo, pausarlo
+      clearInterval(temporizador); // Detener el temporizador
+      corriendo = false; // Actualizar el estado a pausado
+      boton.innerHTML = "Reanudar"; // Cambiar el texto del botón a "Reanudar"
+  }
 }
-
 function actualizarTemporizador() {
     if (tiempo > 0) {
         tiempo--; // Disminuir el tiempo en 1 segundo
