@@ -1,7 +1,7 @@
 /* Estilos base */
 body {
     font-family: 'Playfair Display', serif; /* Cambiar la tipografía a Playfair Display */
-    background: linear-gradient(45deg, #202020, #000); /* Degradado oscuro */
+    background: linear-gradient(45deg, #202020, #7c1d1d); /* Degradado oscuro */
     background-attachment: fixed; /* Evitar repetición del degradado */
     background-size: cover; /* Cubrir todo el viewport */
     margin: 0;
@@ -11,7 +11,7 @@ body {
 
 /* Estilos para el encabezado */
 .header {
-    background: linear-gradient(45deg, #202020, #000); /* Degradado oscuro */
+    background: linear-gradient(45deg, #202020, #7c1d1d); /* Degradado oscuro */
     color: #fff; /* Texto blanco */
     text-align: center;
     padding: 20px 0;
@@ -36,7 +36,7 @@ body {
     padding: 30px;
 
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgb(241, 147, 221); /* Sombra casi blanca */
+    box-shadow: 0 2px 4px rgb(190, 3, 50); /* Sombra casi blanca */
     text-align: center;
     color: #fff; /* Texto blanco */
 }
@@ -104,10 +104,10 @@ body {
     align-items: center;
     justify-content: center; /* Centra horizontalmente los elementos */
     margin-bottom: 5px;
-    border-bottom:solid 1px #ea99ec;
+    border-bottom:solid 1px #e40909;
 }
 .completado {
-    background-color: #9c08a1; 
+    background-color: #f1530a; 
 }
   /* Estilo para el cuadro de marcado */
   .marcado-ejercicio input[type="checkbox"] {
@@ -235,7 +235,7 @@ body {
     max-width: 800px;
     border-radius: 4px;
     padding: 0 20px;
-    box-shadow: 0 2px 4px rgb(241, 147, 221); /* Sombra casi blanca */
+    box-shadow: 0 2px 4px rgb(190, 3, 50); /* Sombra casi blanca */
 
 
 }
@@ -251,7 +251,7 @@ padding-top: 10px;
 .ejercicio {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ea99ec; /* Gris claro */
+    border-bottom: 1px solid #f50909; /* Gris claro */
     padding: 20px 0;
 }
 
@@ -304,9 +304,9 @@ padding-top: 10px;
 }
 
 .botones-dias button:hover {
-    background-color: #00e; /* Cambiar el color de fondo al pasar el mouse */
+    background-color: rgb(238, 0, 0); /* Cambiar el color de fondo al pasar el mouse */
     color: #fff; /* Cambiar el color del texto al pasar el mouse */
-    border-color: #00e; /* Cambiar el color del borde al pasar el mouse */
+    border-color: rgb(2, 2, 8); /* Cambiar el color del borde al pasar el mouse */
 }
 
 .botones-dias button:not(:last-child) {
@@ -321,7 +321,7 @@ padding-top: 10px;
 .bar {
     width: 25px;
     height: 3px;
-    background-color:#ea99ec ;
+    background-color:#f30909 ;
     margin: 5px auto;
     transition: background-color 0.3s ease;
 }
@@ -352,24 +352,24 @@ padding-top: 10px;
         margin-right: 0;
         margin-bottom: 5px; /* Reducir el margen inferior en pantalla pequeña */
         width: 60%; /* Establecer un ancho máximo para los botones */
-        color: #ea99ec;
-        border: 1px solid #ea99ec; /* Agregar un borde claro */
+        color: #f50909;
+        border: 1px solid #f50909; /* Agregar un borde claro */
     }
 }
 
 #temporizador {
     text-align: center;
-    color: #ea99ec; /* Azul claro */
+    color: #f50909; /* Azul claro */
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     background: linear-gradient(45deg, #202020, #000); /* Degradado oscuro */
-    border: 1px solid #ea99ec; /* Borde azul claro */
+    border: 1px solid #f50909; /* Borde azul claro */
     overflow: hidden;
 }
 
 #temporizador h2 {
-    color: #ea99ec; /* Azul claro */
+    color: #f50909; /* Azul claro */
     margin-top: 0;
     font-size: 24px;
     font-weight: normal;
@@ -385,7 +385,7 @@ padding-top: 10px;
 }
 
 #temporizador button {
-    background-color: #ea99ec; /* Azul claro */
+    background-color: #f50909; /* Azul claro */
     color: #000; /* Texto negro */
     border: none;
     padding: 8px 16px;
@@ -397,7 +397,7 @@ padding-top: 10px;
 }
 
 #temporizador button:hover {
-    background-color: #ea99ec; /* Azul más oscuro */
+    background-color: #f50909; /* Azul más oscuro */
 }
 .Recomendaciones .info-titulo {
     color: white;
